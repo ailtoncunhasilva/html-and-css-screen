@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.containerone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.containerone img{
+    height: 50rem;
+}
+
+.containertwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    height: 34rem;
+    border-radius: 2px;
+}
+
+.containergroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgb(154, 183, 213);
+}
+
+.containergroup:nth-child(1){
+    min-height: 19rem;
+}
+
+.containerone{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid lightskyblue;
+    margin-bottom: 1rem;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+.app-login{
+    background-color: rgb(7, 101, 242);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.app-remove-account{
+    color:rgb(7, 101, 242);
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color:rgb(7, 101, 242);
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+    font-weight: normal;
+}
+
+.store-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('images/appstorebutton.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('images/playstorebutton.png');
+}
+
+@media(max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: white;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .containergroup{
+        border: 1px solid transparent;
+    }
+
+    .containerone{
+        display: none;
+    }
+
+    .containertwo{
+        width: 100%;
+    }
+}
+
+
+
